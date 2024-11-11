@@ -1,3 +1,10 @@
+HW 12.11 Video:
+
+
+https://github.com/user-attachments/assets/87eb25ee-f34d-4060-b569-97fe607c0c5e
+
+
+
 HW 07.11 Video:
 
 
