@@ -2237,6 +2237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   content: {fileID: 1893000884}
+  title_tmp: {fileID: 187067244}
+  messageTMP: {fileID: 386398290}
 --- !u!114 &963814370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2427,6 +2429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a00e0265032714d965afbf113086df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelTimeout: 15
 --- !u!114 &1181132679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2592,7 +2595,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1213897977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963814369}
+        m_TargetAssemblyTypeName: ModalScript, Assembly-CSharp
+        m_MethodName: OnExitButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1213897977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3103,7 +3118,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1428925483}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963814369}
+        m_TargetAssemblyTypeName: ModalScript, Assembly-CSharp
+        m_MethodName: OnGoButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1428925483
 MonoBehaviour:
   m_ObjectHideFlags: 0

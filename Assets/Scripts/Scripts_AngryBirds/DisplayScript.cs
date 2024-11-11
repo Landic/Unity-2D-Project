@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class DisplayScript : MonoBehaviour
 {
+    [SerializeField]
+    private float levelTimeout = 15f; // seconds
     private TMPro.TextMeshProUGUI clockTMP;
     private float gameTime;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,6 +29,10 @@ public class DisplayScript : MonoBehaviour
                 minutes,
                 seconds,
                 (int)(milliseconds * 10));
+        }
+        if(gameTime >= levelTimeout)
+        {
+            GameState.Pause("вюя бхвепоюмн");
         }
     }
 }

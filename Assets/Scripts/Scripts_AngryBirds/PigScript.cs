@@ -18,7 +18,8 @@ public class PigScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PigDestroy"))
         {
-            Debug.Log(collision.gameObject.name);
+            GameState.isLevelCompleted = true;
+            GameState.Pause("ВИГРАШ", "Рівень пройдено");
         }
        
     }
