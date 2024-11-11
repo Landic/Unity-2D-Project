@@ -2,8 +2,9 @@
 {
     public static ModalScript modalScriptInstance;
     public static bool isLevelCompleted;
-    public static void Pause(string title = null, string message = null)
+    public static bool isLevelFailed;
+    public static void Pause(string title = null, string message = null, string goButton = null)
     {
-        modalScriptInstance.ShowModal(true, title, message);
+        modalScriptInstance.ShowModal(true, title, message, goButton);
     }
 }

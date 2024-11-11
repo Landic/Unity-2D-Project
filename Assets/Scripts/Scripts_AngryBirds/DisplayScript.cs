@@ -32,7 +32,8 @@ public class DisplayScript : MonoBehaviour
         }
         if(gameTime >= levelTimeout)
         {
-            GameState.Pause("вюя бхвепоюмн");
+            GameState.isLevelFailed = true;
+            GameState.Pause("вюя бхвепоюмн", null, "пнгонвюрх г онвюрйс");
         }
     }
 }

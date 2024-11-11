@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PigScript : MonoBehaviour
 {
@@ -19,7 +20,14 @@ public class PigScript : MonoBehaviour
         if (collision.gameObject.CompareTag("PigDestroy"))
         {
             GameState.isLevelCompleted = true;
-            GameState.Pause("ÂÈÃĞÀØ", "Ğ³âåíü ïğîéäåíî");
+            if (SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1)
+            {
+                GameState.Pause("ÂÈÃĞÀØ", "Ãğà ïğîéäåíà", "ĞÎÇÏÎ×ÀÒÈ Ç ÏÎ×ÀÒÊÓ");
+            }
+            else
+            {
+                GameState.Pause("ÂÈÃĞÀØ", "Ğ³âåíü ïğîéäåíî", "ÍÀÑÒÓÏÍÈÉ Ğ²ÂÅÍÜ");
+            }
         }
        
     }
